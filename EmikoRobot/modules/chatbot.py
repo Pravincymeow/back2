@@ -443,7 +443,7 @@ async def inuka(client, message):
 
     test = test.replace("Rosi", "Aco")
     test = test.replace("Rosi", "Aco")
-    test = test.replace("My god is @Gplove_Rp", "my master is handsome did know him name was ALAN WALKER AND USER NAME @alpha_romeo_06")
+    test = test.replace("My god is @Gplove_Rp", "my master is handsome did know him name was PRAVINCY AND USER NAME @Gplove_Rp")
     test = test.replace("16", "9")
     test = test.replace("@Gplove_Rp is my husband.", "I'm single.")
     test = test.replace("@Rosisupport", "rosi.ai")
