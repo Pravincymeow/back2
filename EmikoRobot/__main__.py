@@ -88,7 +88,7 @@ PM_START_TEXT = """
 ༄ /settings : 
 ╚══༄in PM: will send you your settings for all supported modules.
     ༄ in a Group: will redirect you to pm, with all that chat's settings.
-   Powered by : [𝐏𝐑𝐀𝐕𝐈𝐍𝐂𝐘](https://t.me/RosiEventswinnerList)
+   Powered by : [𝖯R𝖠𝖵𝖨𝖭𝖢𝖸](https://t.me/RosiEventswinnerList)
 """
 
 buttons = [
@@ -113,7 +113,7 @@ Click on the button bellow to get description about specifics command."""
 EMI_IMG = "https://telegra.ph/file/85bfb0f5af421fd03a767.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting [𝐏𝐑𝐀𝐕𝐈𝐍𝐂𝐘](https://t.me/Gplove_Rp) \
+ You can support the project by contacting [𝖯R𝖠𝖵𝖨𝖭𝖢𝖸](https://t.me/Gplove_Rp) \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -474,7 +474,7 @@ def emiko_about_callback(update, context):
             ),
         )
 
-    elif query.data == "emiko_credit":
+    elif query.data == "Emiko_credit":
         query.message.edit_text(
             text=f"♕︎ Credis for Emiko\n"
             "\nHere Developers Making And Give Inspiration For Made TheRosicat",
@@ -484,10 +484,10 @@ def emiko_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ROSI", url="https://t.me/MissRosinetwork"
+                            text="♕︎ROSI", url="https://t.me/MissRosinetwork"
                         ),
                         InlineKeyboardButton(
-                            text="ALAN WALKER",url="https://t.me/alpha_romeo_06"
+                            text="♔︎ALAN WALKER",url="https://t.me/alpha_romeo_06"
                         ),
                     ],
                     [
@@ -516,7 +516,7 @@ def emiko_about_callback(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="PRAVINCY", url="https://t.me/Rosiultra_bot"
+                            text="♔︎PRAVINCY", url="https://t.me/Rosiultra_bot"
                         ),
                         InlineKeyboardButton(
                             text="BOT UPDATE", url="https://t.me/MissRosinetwork"
@@ -842,7 +842,7 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             dispatcher.bot.sendMessage(
-                f"@{SUPPORT_CHAT}", "👋 Hi, i'm alive.", parse_mode=ParseMode.MARKDOWN
+                f"@{SUPPORT_CHAT}", "👋 Hi, i'm Rosi.", parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
             LOGGER.warning(
