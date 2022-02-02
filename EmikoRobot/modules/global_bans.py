@@ -89,7 +89,7 @@ def gban(update: Update, context: CallbackContext):
 
     if int(user_id) in DEV_USERS:
         message.reply_text(
-            "I do not have the power to ban him😥.",
+            "That user is part of the Association\nI can't act against our own.",
         )
         return
 
@@ -101,7 +101,7 @@ def gban(update: Update, context: CallbackContext):
 
     if int(user_id) in DEMONS:
         message.reply_text(
-            "This person can be banned!  But it costs 2500 / - rupees only😑",
+            "OOOH someone's trying to gban a Demon Disaster! *grabs popcorn*",
         )
         return
 
@@ -163,7 +163,7 @@ def gban(update: Update, context: CallbackContext):
 
         return
 
-    message.reply_text("On it!")
+    message.reply_text("🤫𝗦𝗛𝗔𝗗🔲𝗪༄ 𝗚𝗕𝗔𝗡 🔲𝗡 𝗣𝗥🔲𝗚𝗥𝗘𝗦𝗦🤫")
 
     start_time = time.time()
     datetime_fmt = "%Y-%m-%dT%H:%M"
@@ -258,9 +258,9 @@ def gban(update: Update, context: CallbackContext):
 
     if gban_time > 60:
         gban_time = round((gban_time / 60), 2)
-        message.reply_text("Done! Gbanned.", parse_mode=ParseMode.HTML)
+        message.reply_text("🤫𝗦𝗛𝗔𝗗🔲𝗪༄ 𝗚𝗕𝗔𝗡 🔲𝗡 𝗣𝗥🔲𝗚𝗥𝗘𝗦𝗦🤫", parse_mode=ParseMode.HTML)
     else:
-        message.reply_text("Done! Gbanned.", parse_mode=ParseMode.HTML)
+        message.reply_text("🤫𝗦𝗛𝗔𝗗🔲𝗪༄ 𝗚𝗕𝗔𝗡 🔲𝗡 𝗣𝗥🔲𝗚𝗥𝗘𝗦𝗦🤫", parse_mode=ParseMode.HTML)
 
     try:
         bot.send_message(
