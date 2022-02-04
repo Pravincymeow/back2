@@ -89,13 +89,13 @@ def gban(update: Update, context: CallbackContext):
 
     if int(user_id) in DEV_USERS:
         message.reply_text(
-            "That user is part of the Association\nI can't act against our own.",
+            "Nee yaara ban pannuranu theriuma onakku! Eanakku uyer kudutha kadavul avanga.",
         )
         return
 
     if int(user_id) in DRAGONS:
         message.reply_text(
-            "I spy, with my little eye... a disaster! Why are you guys turning on each other?",
+            "Ivangala ban pannalaam aana konjama kaasu selavaagum?",
         )
         return
 
@@ -539,13 +539,13 @@ def __chat_settings__(chat_id, user_id):
 
 __help__ = f"""
 *Admins only:*
-☼︎ /antispam <on/off/yes/no>: Will toggle our antispam tech or return your current settings.
+❂ /antispam <on/off/yes/no>: Will toggle our antispam tech or return your current settings.
 Anti-Spam, used by bot devs to ban spammers across all groups. This helps protect \
 you and your groups by removing spam flooders as quickly as possible.
 Note: Users can appeal gbans or report spammers at @{SUPPORT_CHAT}
-☼︎ /flood: Get the current antiflood settings
-☼︎ /setflood <number/off/no>: Set the number of messages after which to take action on a user. Set to '0', 'off', or 'no' to disable.
-☼︎ /setfloodmode <action type>: Choose which action to take on a user who has been flooding. Options: ban/kick/mute/tban/tmute.
+❂ /flood: Get the current antiflood settings
+❂ /setflood <number/off/no>: Set the number of messages after which to take action on a user. Set to '0', 'off', or 'no' to disable.
+❂ /setfloodmode <action type>: Choose which action to take on a user who has been flooding. Options: ban/kick/mute/tban/tmute.
 """
 
 GBAN_HANDLER = CommandHandler("gban", gban, run_async=True)
